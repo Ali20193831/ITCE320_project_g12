@@ -62,7 +62,7 @@ while True:
 
         elif option == "4":
             client.sendall(option.encode())
-            flight_iata = input("please enter flight iata GF5300: ")
+            flight_iata = input("please enter flight iata: ")
             client.sendall(flight_iata.encode())
             data = client.recv(8192)
             data_list(data)
